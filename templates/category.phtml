@@ -1,0 +1,6 @@
+<h2>Category : <?= htmlspecialchars($category['name']) ?></h2>
+<ul>
+    <?php foreach ($posts as $post): ?>
+        <li><a href="index.php?route=post&post=<?= $post['id'] ?>"><?= htmlspecialchars($post['title']) ?></a></li>
+    <?php endforeach; ?>
+</ul>
